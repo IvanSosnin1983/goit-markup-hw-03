@@ -86,6 +86,7 @@ img {
 }
 .header-nav .header-logo {
   margin-left: 215px;
+  margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -102,6 +103,9 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-contact {
   display: flex;
   color: var(--primery-color-text);
@@ -109,6 +113,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.header-contact-list {
+  margin-left: auto;
 }
 .header-nav .header-list .current {
   color: var(--color-hover);
