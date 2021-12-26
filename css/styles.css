@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --title-color-text: #212121;
   --primery-color-text: #757575;
@@ -7,6 +11,58 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /* Цвет заголовка секции  #757575  */
@@ -20,7 +76,16 @@ body {
   text-decoration: none;
 }
 /* ----------------------------header------------------ */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 .header-nav .header-logo {
+  margin-left: 215px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -31,25 +96,39 @@ body {
   color: #2196f3;
 }
 .header-list {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
+}
+.header-contact {
+  display: flex;
+  color: var(--primery-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .header-nav .header-list .current {
   color: var(--color-hover);
 }
 .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--color-prime);
 }
 .header-link:hover,
-.header-link:focus {
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus {
   color: var(--color-hover);
 }
 
 /*------------------------ HERO---------------- */
 .hero {
-  background-color: #757575;
+  background-color: #2f303a;
 }
 .hero .hero-title {
   color: white;
@@ -57,7 +136,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero > .button {
@@ -67,7 +146,7 @@ body {
   font-style: Bold;
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 .hero > .button:hover,
 .hero > .button:focus {
@@ -80,22 +159,26 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
+}
+.work-principles .secondary-title {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .secondary-title {
   color: var(--title-color-text);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 3%;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  /* text-transform: uppercase; */
 }
 .section-text {
   color: var(--primery-color-text);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 /* -------------------- FOOTER------------ */
@@ -122,8 +205,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.footer-mail,
-.footer-tel {
+.footer-contact {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -140,7 +222,7 @@ body {
   font-style: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 .btn:hover,
@@ -150,7 +232,7 @@ body {
   font-style: 500;
   font-size: 16px;
   line-height: 1.63;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }
 
 /* -----------Галерея----------------- */
@@ -160,12 +242,12 @@ body {
   font-style: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 6%;
+  letter-spacing: 0.06em;
 }
 .filter-text {
   color: var(--primery-color-text);
   font-style: 400;
   font-size: 16px;
   line-height: 1.86;
-  letter-spacing: 3%;
+  letter-spacing: 0.03em;
 }

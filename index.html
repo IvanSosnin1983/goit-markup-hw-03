@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
+    <!-- подключение  modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- подключение css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- подключение шрифтов -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,36 +26,39 @@
   <body>
     <!--Верхняя линия-->
     <header class="header">
-      <nav class="header-nav">
-        <a href="" class="header-logo link"><span class="header-web">Web</span>Studio</a>
-        <ul class="list header-list">
-          <li class="header-item">
-            <a href="./index.html" class="link header-link current">Студия</a>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="" class="header-logo link"><span class="header-web">Web</span>Studio</a>
+          <ul class="list header-list">
+            <li class="header-item">
+              <a href="./index.html" class="link header-link current">Студия</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="link header-link">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="link header-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link header-contact">info@devstudio.com</a>
           </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="link header-link">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="link header-link">Контакты</a>
-          </li>
+          <li><a href="tel:+380961111111" class="link header-contact">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="header-list list">
-        <li><a href="mailto:info@devstudio.com" class="link header-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link header-link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Герой-->
       <section class="hero">
-        <img src="./imeges/bg.jpg" alt="" width="1600" height="600" />
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="button">Заказать услугу</button>
       </section>
 
       <!--Принципы работы-->
-      <section>
-        <h2 class="section-title">Принципы работы</h2>
+      <section class="work-principles">
+        <h2 class="section-title visually-hidden">Принципы работы</h2>
         <ul class="list">
           <li>
             <h3 class="secondary-title">Внимание к деталям</h3>
@@ -116,8 +128,10 @@
       <address class="footer-address">
         г. Киев, пр-т Леси Украинки, 26
         <ul class="list">
-          <li><a href="mailto:info@example.com" class="link footer-mail">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="link footer-tel">+38 099 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@example.com" class="link footer-contact">info@example.com</a>
+          </li>
+          <li><a href="tel:+380991111111" class="link footer-contact">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </footer>
