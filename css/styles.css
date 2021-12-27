@@ -135,8 +135,17 @@ img {
 
 /*------------------------ HERO---------------- */
 .hero {
+  /* display: flex; */
   background-color: #2f303a;
+  /* padding: 200px 0 200px 452px; */
 }
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0px 200px 452px;
+}
+
 .hero .hero-title {
   color: white;
   font-family: Roboto;
@@ -145,6 +154,9 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.hero-title {
+  max-width: 696px;
 }
 .hero > .button {
   color: white;
