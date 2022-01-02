@@ -119,6 +119,9 @@ img {
 .header-contact-list {
   margin-left: auto;
 }
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-nav .header-list .current {
   color: var(--color-hover);
 }
@@ -183,10 +186,12 @@ img {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .work-principles .secondary-title {
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .secondary-title {
   color: var(--title-color-text);
@@ -204,19 +209,80 @@ img {
   letter-spacing: 0.03em;
 }
 
+/* ----------------Принципы работы----------- */
+.work-principles .container {
+  padding-top: 94px;
+}
+.work-principles .list {
+  display: flex;
+  margin-right: -30px;
+}
+.activity .section-title {
+  margin-bottom: 50px;
+}
+.principles-item {
+  width: 270px;
+  margin-right: 30px;
+}
+/* ------------Чем мы занимаемся----------- */
+.activity .container {
+  padding-top: 94px;
+}
+.activity .list {
+  display: flex;
+
+  /* margin-right: -30px; */
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+/* ------------Наша команда----------- */
+.team .container {
+  padding-top: 94px;
+}
+.team .section-title {
+  margin-bottom: 50px;
+}
+.team .list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.team-img {
+  margin-bottom: 30px;
+}
+.team .secondary-title {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+.team .section-text {
+  text-align: center;
+}
 /* -------------------- FOOTER------------ */
+.footer .container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer {
   background: #2f303a;
 }
 
 .footer-logo {
+  display: block;
   color: #ffffff;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
 }
 
 .footer-address {
@@ -226,6 +292,10 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-contact {

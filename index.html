@@ -43,10 +43,12 @@
         </nav>
         <div class="header-contact-list">
           <ul class="header-list list">
-            <li>
+            <li class="contact-item">
               <a href="mailto:info@devstudio.com" class="link header-contact">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+380961111111" class="link header-contact">+38 096 111 11 11</a></li>
+            <li class="contact-item">
+              <a href="tel:+380961111111" class="link header-contact">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -62,82 +64,113 @@
 
       <!--Принципы работы-->
       <section class="work-principles">
-        <h2 class="section-title visually-hidden">Принципы работы</h2>
-        <ul class="list">
-          <li>
-            <h3 class="secondary-title">Внимание к деталям</h3>
-            <p class="section-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="secondary-title">Пунктуальность</h3>
-            <p class="section-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="secondary-title">Планирование</h3>
-            <p class="section-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="secondary-title">Современные технологии</h3>
-            <p class="section-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title visually-hidden">Принципы работы</h2>
+          <ul class="list">
+            <li class="principles-item">
+              <h3 class="secondary-title">Внимание к деталям</h3>
+              <p class="section-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li class="principles-item">
+              <h3 class="secondary-title">Пунктуальность</h3>
+              <p class="section-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li class="principles-item">
+              <h3 class="secondary-title">Планирование</h3>
+              <p class="section-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li class="principles-item">
+              <h3 class="secondary-title">Современные технологии</h3>
+              <p class="section-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section>
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li><img src="./imeges/box1.jpg" alt="Разработка сайтов" width="370" /></li>
-          <li><img src="./imeges/box2.jpg" alt="Оптимизация" width="370" /></li>
-          <li><img src="./imeges/box3.jpg" alt="Подбор цвета" width="370" /></li>
-        </ul>
+      <section class="activity">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul class="list">
+            <li class="activity-item">
+              <img src="./imeges/box1.jpg" alt="Разработка сайтов" width="370" />
+            </li>
+            <li class="activity-item">
+              <img src="./imeges/box2.jpg" alt="Оптимизация" width="370" />
+            </li>
+            <li class="activity-item">
+              <img src="./imeges/box3.jpg" alt="Подбор цвета" width="370" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Наша команда-->
-      <section>
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
-          <li>
-            <img src="./imeges/img_igor.jpg" alt="Игорь Демьяненко" width="270" />
-            <h3 class="secondary-title">Игорь Демьяненко</h3>
-            <p class="section-text">Product Designer</p>
-          </li>
-          <li>
-            <img src="./imeges/img_olga.jpg" alt="Ольга Репина" width="270" />
-            <h3 class="secondary-title">Ольга Репина</h3>
-            <p class="section-text">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="./imeges/img_nikolay.jpg" alt="Николай Тарасов" width="270" />
-            <h3 class="secondary-title">Николай Тарасов</h3>
-            <p class="section-text">Marketing</p>
-          </li>
-          <li>
-            <img src="./imeges/img_mihail.jpg" alt="Михаил Ермаков" width="270" />
-            <h3 class="secondary-title">Михаил Ермаков</h3>
-            <p class="section-text">UI Designer</p>
-          </li>
-        </ul>
+      <section class="team">
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="list">
+            <li class="team-item">
+              <img
+                src="./imeges/img_igor.jpg"
+                alt="Игорь Демьяненко"
+                class="team-img"
+                width="270"
+              />
+              <h3 class="secondary-title">Игорь Демьяненко</h3>
+              <p class="section-text">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img src="./imeges/img_olga.jpg" alt="Ольга Репина" class="team-img" width="270" />
+              <h3 class="secondary-title">Ольга Репина</h3>
+              <p class="section-text">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./imeges/img_nikolay.jpg"
+                alt="Николай Тарасов"
+                class="team-img"
+                width="270"
+              />
+              <h3 class="secondary-title">Николай Тарасов</h3>
+              <p class="section-text">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./imeges/img_mihail.jpg"
+                alt="Михаил Ермаков"
+                class="team-img"
+                width="270"
+              />
+              <h3 class="secondary-title">Михаил Ермаков</h3>
+              <p class="section-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!--Футер-->
     <footer class="footer">
-      <a href="" class="footer-logo link"><span class="header-web">Web</span>Studio</a>
-      <address class="footer-address">
-        г. Киев, пр-т Леси Украинки, 26
-        <ul class="list">
-          <li>
-            <a href="mailto:info@example.com" class="link footer-contact">info@example.com</a>
-          </li>
-          <li><a href="tel:+380991111111" class="link footer-contact">+38 099 111 11 11</a></li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="" class="footer-logo link"><span class="header-web">Web</span>Studio</a>
+        <address class="footer-address">
+          <ul class="list">
+            <li class="footer-item">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="footer-item">
+              <a href="mailto:info@example.com" class="link footer-contact">info@example.com</a>
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380991111111" class="link footer-contact">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
